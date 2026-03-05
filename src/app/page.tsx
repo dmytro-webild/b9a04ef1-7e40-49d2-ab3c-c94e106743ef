@@ -49,7 +49,7 @@ export default function HomePage() {
           tagIcon={Sparkles}
           tagAnimation="slide-up"
           buttons={[
-            { text: 'Get Started Free', href: '/dashboard' },
+            { text: 'Start Creating Free', href: '/dashboard' },
             { text: 'View All Tools', href: '/tools' }
           ]}
           buttonAnimation="slide-up"
