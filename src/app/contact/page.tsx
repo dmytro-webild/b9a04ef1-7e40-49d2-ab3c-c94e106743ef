@@ -16,7 +16,7 @@ export default function ContactPage() {
       borderRadius="soft"
       contentWidth="smallMedium"
       sizing="mediumLargeSizeLargeTitles"
-      background="aurora"
+      background="circleGradient"
       cardStyle="outline"
       primaryButtonStyle="flat"
       secondaryButtonStyle="glass"
@@ -49,7 +49,7 @@ export default function ContactPage() {
             { text: 'WhatsApp Support', href: 'https://wa.me/923147356117?text=Hello%2C%20I%20need%20help%20with%20Brainify' }
           ]}
           buttonAnimation="slide-up"
-          background={{ variant: 'aurora' }}
+          background={{ variant: 'plain' }}
           useInvertedBackground={false}
         />
       </div>

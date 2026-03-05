@@ -9,7 +9,7 @@ import TestimonialCardFive from '@/components/sections/testimonial/TestimonialCa
 import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
 import ContactCTA from '@/components/sections/contact/ContactCTA';
 import FooterCard from '@/components/sections/footer/FooterCard';
-import { Sparkles, Zap, TrendingUp, Award, Mail, Twitter, Linkedin } from 'lucide-react';
+import { Sparkles, Zap, TrendingUp, Award, Mail, Twitter, Linkedin, Users, Heart, Image } from 'lucide-react';
 import Link from 'next/link';
 
 export default function HomePage() {
@@ -20,7 +20,7 @@ export default function HomePage() {
       borderRadius="soft"
       contentWidth="smallMedium"
       sizing="mediumLargeSizeLargeTitles"
-      background="aurora"
+      background="circleGradient"
       cardStyle="outline"
       primaryButtonStyle="flat"
       secondaryButtonStyle="glass"
@@ -53,7 +53,7 @@ export default function HomePage() {
             { text: 'View All Tools', href: '/tools' }
           ]}
           buttonAnimation="slide-up"
-          background={{ variant: 'aurora' }}
+          background={{ variant: 'plain' }}
           carouselItems={[
             {
               id: 'carousel-1',
@@ -152,8 +152,8 @@ export default function HomePage() {
           metrics={[
             { id: '1', icon: TrendingUp, title: 'Active Users', value: '50,000+' },
             { id: '2', icon: Zap, title: 'AI Sparks Used', value: '10M+' },
-            { id: '3', icon: Sparkles, title: 'Content Created', value: '1M+' },
-            { id: '4', icon: Sparkles, title: 'Satisfaction Rate', value: '98%' }
+            { id: '3', icon: Image, title: 'Content Created', value: '1M+' },
+            { id: '4', icon: Heart, title: 'Satisfaction Rate', value: '98%' }
           ]}
           title="Growing Fast - Join Our Community"
           description="Trusted by thousands of creators, designers, and businesses worldwide."
@@ -285,7 +285,7 @@ export default function HomePage() {
             { text: 'WhatsApp Support', href: 'https://wa.me/923147356117?text=Hello%2C%20I%20need%20help%20with%20Brainify' }
           ]}
           buttonAnimation="slide-up"
-          background={{ variant: 'aurora' }}
+          background={{ variant: 'plain' }}
           useInvertedBackground={false}
         />
       </div>
