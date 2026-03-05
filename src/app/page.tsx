@@ -273,6 +273,97 @@ export default function HomePage() {
         />
       </div>
 
+      <div id="payment" data-section="payment">
+        <div className="w-full py-24 px-4 md:px-8 bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-slate-900 dark:text-white">Payment Methods</h2>
+              <p className="text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">Choose your preferred payment method to get started with Brainify</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              {/* EasyPaisa Card */}
+              <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div className="p-8">
+                  <div className="flex items-center justify-between mb-6">
+                    <div>
+                      <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">EasyPaisa</h3>
+                      <p className="text-sm text-slate-600 dark:text-slate-300">Fast and secure mobile payments</p>
+                    </div>
+                    <img 
+                      src="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AVswAIYlsTNcIZ3oIHvVtQVpeu/uploaded-1772690936952-j6mf96ds.png" 
+                      alt="EasyPaisa Logo" 
+                      className="w-16 h-16 object-contain"
+                    />
+                  </div>
+                  
+                  <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-slate-700 dark:to-slate-600 rounded-lg p-6 mb-6">
+                    <img 
+                      src="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AVswAIYlsTNcIZ3oIHvVtQVpeu/uploaded-1772690936951-18eqjtj8.png" 
+                      alt="EasyPaisa QR Code" 
+                      className="w-full max-w-xs mx-auto"
+                    />
+                  </div>
+                  
+                  <div className="space-y-3 mb-6">
+                    <div className="flex items-center gap-3">
+                      <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      <span className="text-sm text-slate-700 dark:text-slate-300">Instant payment processing</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      <span className="text-sm text-slate-700 dark:text-slate-300">No additional fees</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      <span className="text-sm text-slate-700 dark:text-slate-300">Secure and encrypted transactions</span>
+                    </div>
+                  </div>
+                  
+                  <button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 rounded-lg transition-all duration-200 transform hover:scale-105">
+                    Pay with EasyPaisa
+                  </button>
+                </div>
+              </div>
+
+              {/* Other Payment Methods */}
+              <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div className="p-8">
+                  <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Other Methods</h3>
+                  
+                  <div className="space-y-4">
+                    <button className="w-full bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-semibold py-3 rounded-lg transition-all duration-200 transform hover:scale-105">
+                      Credit/Debit Card
+                    </button>
+                    <button className="w-full bg-gradient-to-r from-blue-400 to-blue-500 hover:from-blue-500 hover:to-blue-600 text-white font-semibold py-3 rounded-lg transition-all duration-200 transform hover:scale-105">
+                      Bank Transfer
+                    </button>
+                    <button className="w-full bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-semibold py-3 rounded-lg transition-all duration-200 transform hover:scale-105">
+                      JazzCash
+                    </button>
+                    <button className="w-full bg-gradient-to-r from-purple-500 to-indigo-600 hover:from-purple-600 hover:to-indigo-700 text-white font-semibold py-3 rounded-lg transition-all duration-200 transform hover:scale-105">
+                      PayPal
+                    </button>
+                  </div>
+                  
+                  <div className="mt-6 p-4 bg-blue-50 dark:bg-slate-700 rounded-lg">
+                    <p className="text-sm text-slate-600 dark:text-slate-300">
+                      <strong>Need help?</strong> Contact our support team at support@brainify.ai or WhatsApp us at +92 314 7356117
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div id="contact" data-section="contact">
         <ContactCTA
           tag="Get in Touch"

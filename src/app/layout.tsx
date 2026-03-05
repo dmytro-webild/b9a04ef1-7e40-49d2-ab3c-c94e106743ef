@@ -5,7 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Brainify - AI Content Creation Platform",  description: "Transform your creativity with AI-powered tools for content creation, image generation, video production, and more."};
+  title: "Brainify - AI Content Creation Platform",  description: "Transform your creativity with AI-powered tools for content creation, image generation, video production, and more."
+};
 
 export default function RootLayout({
   children,
